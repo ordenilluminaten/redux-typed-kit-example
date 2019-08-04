@@ -1,0 +1,17 @@
+.todo-item {
+    padding: 15px;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+
+    &.completed {
+        label {
+            text-decoration: line-through;
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    label {
+        flex: 1;
+    }
+}

@@ -1,0 +1,27 @@
+body {
+    background-color: #F6F8F9;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+
+    .todo-app {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: calc(100vh - 100px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1) !important;
+        border: 1px solid #F0F0F0;
+        background: #fff;
+
+        main {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        footer {
+            padding: 15px;
+            border-top: 1px solid #F0F0F0;
+        }
+    }
+}
