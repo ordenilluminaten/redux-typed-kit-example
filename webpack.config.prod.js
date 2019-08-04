@@ -6,7 +6,7 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const pkg = require('./package.json');
 
-module.exports = function(env) {
+module.exports = function() {
   const bundleFolder = 'dist/prod/';
   const vendorScripts = Object.keys(pkg.dependencies);
 

@@ -6,7 +6,7 @@ import TodoItem from '../models/todo-item';
 export default class TodosMiddleware extends Middleware<AppState> {
 
     @PostMiddlewareHandler
-    test1(store: Store<AppState>, action: AddTodoAction) {
+    addTodo(store: Store<AppState>, action: AddTodoAction) {
         const state = store.getState();
         // simulate async server request
         setTimeout(() => {

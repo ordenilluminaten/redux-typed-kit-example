@@ -61,14 +61,14 @@ export default class TodosReducer extends Reducer<TodosState> {
     }
 
     @Action
-    test1(state: TodosState, action: RemoveTodoAction): TodosState {
+    removeTodo(state: TodosState, action: RemoveTodoAction): TodosState {
         return state.rebuild(x => {
             x.todos = x.todos.filter(x => x.id != action.todoId);
         });
     }
 
     @Action
-    testSuccess(state: TodosState, action: ToggleTodoAction): TodosState {
+    toggleTodo(state: TodosState, action: ToggleTodoAction): TodosState {
         return state.rebuild(x => {
             x.todos = x.todos.map(x => {
                 if (x.id == action.todoId)
